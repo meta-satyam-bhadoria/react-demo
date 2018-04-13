@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Link, BrowserRouter as Router, Route } from 'react-router-dom';
+import { Switch, Link, BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 
 import Home from './Home';
 import BYOOption from './navbar-BYO-option.js';
@@ -53,8 +53,7 @@ const App = () => (
 
 
       <Route exact path="/" component={Home} />
-      <Route exact path="/BYO/build-and-equip" component={BuildEquip} />
-      <Route path="/BYO/build-and-equip/:path" render={()=> <h3>Wrong path</h3>} />
+      <Route exact path="/BYO/build-and-equip" component={BuildEquip}  />
     </div>
   </Router>
 );
