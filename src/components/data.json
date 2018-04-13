@@ -1,0 +1,74 @@
+{
+  "BYO":{
+    "build_and_equip": {
+      "link": "build-and-equip",
+      "title": "Build your van",
+      "model": {
+        "sprinter": {
+          "LE": {
+            "title": "sprinter worker",
+            "name": "Cargo van",
+            "price": {
+              "year": {
+                "2017": "32000",
+                "2018": "33000"
+              }
+            }
+          },
+          "CA": {
+            "title": "sprinter",
+            "name": "Cargo van",
+            "price": {
+              "year": {
+                "2017": "32400",
+                "2018": "33800"
+              }
+            }
+          },
+          "PV": {
+            "title": "sprinter",
+            "name": "Passenger van",
+            "price": {
+              "year": {
+                "2017": "35000",
+                "2018": "38000"
+              }
+            }
+          },
+          "CC": {
+            "title": "sprinter",
+            "name": "Cab chassis",
+            "price": {
+              "year": {
+                "2017": "36000",
+                "2018": "38500"
+              }
+            }
+          }
+        },
+        "metris": {}
+      },
+      "pic": "https://assets.mbvans.com/dist/images/sprinter/ShoppingTool_BYO.png"
+    },
+    "special_offer": {
+      "link": "special-offer",
+      "title": "special offer",
+      "pic": "https://assets.mbvans.com/dist/images/sprinter/ShoppingTool_SpecialOffers.png"
+    },
+    "fleet": {
+      "link": "fleet",
+      "title": "Fleet",
+      "pic": "https://assets.mbvans.com/dist/images/sprinter/navigation/top/ShoppingTool_FleetProgram.png"
+    },
+    "upfit_solutions": {
+      "link": "upfit-solutions",
+      "title": "upfit solutions",
+      "pic": "https://assets.mbvans.com/dist/images/sprinter/v2/ShoppingTool_MasterSolutions.png"
+    },
+    "new_inventory": {
+      "link": "new-inventory",
+      "title": "new inventory",
+      "pic": "https://assets.mbvans.com/dist/images/sprinter/navigation/top/View_Inventory.png"
+    }
+  }
+}

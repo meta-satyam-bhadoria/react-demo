@@ -1,0 +1,60 @@
+body
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+  color: #000
+
+.header
+  background-color: #141414
+  color: #fff
+  ul
+    list-style-type: none
+    margin: 0
+    .nav-item
+      width: 20%
+      height: 80px
+      .nav-link-content
+        position: absolute
+        width: 100%
+        left: 0
+        a
+          width: 20%
+          float: left
+          text-align: center
+          figure
+            width: 130px
+            overflow: hidden
+            margin: 0 auto
+            img
+              width: 250px
+    li
+      float: left
+      border-right: 1px solid grey
+    .logo
+      width: 28%
+      .img
+        width: 100%
+
+.link-wrap
+  display: table
+  position: relative
+  height: 100%
+  margin: 0 auto
+  padding: 0 20px
+  .link
+    display: table-cell
+    vertical-align: middle
+
+
+
+
+.block::after
+  content: ""
+  display: table
+  clear: both
+
+.block::before
+  content: ""
+  display: table
