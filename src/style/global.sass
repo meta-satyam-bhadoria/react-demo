@@ -1,0 +1,17 @@
+.container
+  margin: auto
+
+@media(min-width: 768px)
+  .container
+    width: 750px
+
+@media(min-width: 992px)
+  .container
+    width: 970px
+
+.container::after, .container::before
+  content: ""
+  display: table
+
+.container::after
+  clear: both

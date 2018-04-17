@@ -1,0 +1,111 @@
+body
+  margin: 0
+  padding: 0
+
+a
+  text-decoration: none
+  color: #000
+
+.header
+  background-color: #141414
+  color: #fff
+  ul
+    list-style-type: none
+    margin: 0
+    .nav-item
+      width: 20%
+      cursor: pointer
+      height: 80px
+      float: left
+      border-right: 1px solid grey
+      .nav-link-content
+        position: absolute
+        background-color: white
+        display: none
+        z-index: 10
+        width: 100%
+        left: 0
+        a
+          width: 20%
+          float: left
+          text-align: center
+          figure
+            width: 130px
+            overflow: hidden
+            margin: 0 auto
+            img
+              width: 250px
+    .nav-item:hover
+      .nav-link-content
+        display: block
+    .logo
+      width: 28%
+      .img
+        width: 100%
+
+.link-wrap
+  display: table
+  position: relative
+  height: 100%
+  margin: 0 auto
+  padding: 0 20px
+  .link
+    display: table-cell
+    vertical-align: middle
+
+.build-progress-bar
+  width: 100%
+  .progress-bar-block
+    float: left
+    width: calc(20% - 2px)
+    padding: 0 1px
+    .build-detail
+      height: 100px
+      overflow: hidden
+      .image
+        float: left
+        width: 50%
+        overflow: hidden
+        padding: 10px
+        img
+          width: 200%
+      .detail
+        float: left
+        text-align: center
+        h5, h6
+          font-size: 14px
+          text-transform: capitalize
+    .build-progress
+      margin-top: 10px
+      height: 10px
+      background-color: lightgrey
+    .build-name
+      margin-top: 10px
+      color: #0b63ef
+      text-align: center
+
+.model-name, .model-year
+  .container
+    .model-section
+      text-align: center
+      .selected
+        color: blue
+      .model
+        font-size: 26px
+        display: inline-block
+        padding: 0 15px
+
+.vehicles
+  .vehicle
+    display: inline-block
+    padding: 0 20px
+    text-align: center
+
+
+
+.block::before, .block::after
+  content: ""
+  display: table
+
+.block::after
+  clear: both
