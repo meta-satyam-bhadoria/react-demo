@@ -1,0 +1,136 @@
+.navbar
+  .container
+    .navbar-header
+      .navbar-brand
+        span
+          img
+            width: 140px
+    .navbar-collapse
+      ul
+        .nav-items
+          a
+            .caret
+              display: none
+          a:focus
+            background-color: white
+            color: black
+
+@media(min-width: 768px)
+  .navbar
+    .container
+      height: 80px
+      .navbar-header
+        width: 80px
+        padding: 0
+        overflow: hidden
+        height: inherit
+        .navbar-brand
+          height: inherit
+          margin: 0
+          padding: 0 10px
+          display: table
+          .logo
+            height: inherit
+            display: table-cell
+            vertical-align: middle
+            img
+              width: 280px
+      .navbar-collapse
+        height: inherit !important
+        ul
+          height: inherit
+          .nav-items
+            position: static
+            height: 100%
+            width: 155px
+            a
+              text-align: center
+              width: 100%
+              height: inherit
+              display: table
+              padding: 0
+              span
+                display: table-cell
+                height: inherit
+                vertical-align: middle
+            .dropdown-menu
+              width: 100%
+              height: auto
+              .container
+                height: auto
+                li
+                  display: inline-block
+                  width: 50%
+                  vertical-align: top
+                  a
+                    h4
+                      text-align: center
+                      text-transform: capitalize
+                    figure
+                      width: 160px
+                      margin: auto
+                      overflow: hidden
+          .BYO-wrap
+            li:nth-child(1)
+              a
+                figure
+                  img
+                    width: 264px
+                    position: relative
+                    left: 16px
+            li:nth-child(2),
+            li:nth-child(3)
+              a
+                figure
+                  img
+                    height: 135px
+            li:nth-child(4),
+            li:nth-child(5)
+              a
+                figure
+                  img
+                    height: 124px
+          .nav-items:nth-child(n)
+            border-left: 1px solid lightgrey
+          .nav-items:last-child
+            border-right: 1px solid lightgrey
+
+@media(min-width: 992px)
+  .navbar
+    .container
+      .navbar-header
+        width: 300px
+      .navbar-collapse
+        ul
+          .nav-items
+            width: 155px
+            .dropdown-menu
+              .container
+                li
+                  width: 20%
+
+@media(max-width: 767px)
+  .navbar
+    .container
+      .navbar-header
+        .navbar-brand
+          width: 50px
+          margin-left: calc(50% - 25px)
+          overflow: hidden
+          padding: 0
+          .logo
+            display: table
+            height: inherit
+            span
+              display: table-cell
+              vertical-align: middle
+      .navbar-collapse
+        ul
+          .nav-items
+            .dropdown-menu
+              .container
+                li
+                  a
+                    color: $grey
+                    figure
+                      display: none

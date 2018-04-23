@@ -11,6 +11,7 @@
           },
           "model": {
             "LE": {
+              "pic": "https://assets.mbvans.com/c_scale,w_310/Mercedes-Benz-Vans/Sprinter/Cargo-Van/BYO-Model/sprinter_cargo.png",
               "title": "sprinter worker",
               "name": "Cargo van",
               "price": {
@@ -18,9 +19,67 @@
                   "2017": "32000",
                   "2018": "33000"
                 }
-              }
+              },
+              "wheelbase": [
+                {
+                  "name": "144",
+                  "price": {
+                    "2017": "12",
+                    "2018": "13"
+                  }
+                },
+                {
+                  "name": "170",
+                  "price": {
+                    "2017": "23",
+                    "2018": "22"
+                  }
+                }
+              ],
+              "height": [
+                {
+                  "name": "Standard Roof",
+                  "price": {
+                    "2017": "12",
+                    "2018": "14"
+                  }
+                },
+                {
+                  "name": "High Roof",
+                  "price": {
+                    "2017": "23",
+                    "2018": "24"
+                  }
+                }
+              ],
+              "powertrain": [
+                {
+                  "name": "6 Cylinders",
+                  "price": {
+                    "2017": "22",
+                    "2018": "44"
+                  }
+                }
+              ],
+              "payload": [
+                {
+                  "name": [
+                    {
+                      "payload": "3501 lbs."
+                    },
+                    {
+                      "towing": "5000 lbs."
+                    }
+                  ],
+                  "price": {
+                    "2017": "11",
+                    "2018": "10"
+                  }
+                }
+              ]
             },
             "CA": {
+              "pic": "https://assets.mbvans.com/c_scale,w_310/Mercedes-Benz-Vans/Sprinter/Worker-Van/BYO-Model/sprinter_worker_cargo.png",
               "title": "sprinter",
               "name": "Cargo van",
               "price": {
@@ -28,9 +87,67 @@
                   "2017": "32400",
                   "2018": "33800"
                 }
-              }
+              },
+              "wheelbase": [
+                {
+                  "name": "144",
+                  "price": {
+                    "2017": "12",
+                    "2018": "13"
+                  }
+                },
+                {
+                  "name": "170",
+                  "price": {
+                    "2017": "23",
+                    "2018": "22"
+                  }
+                }
+              ],
+              "height": [
+                {
+                  "name": "Standard Roof",
+                  "price": {
+                    "2017": "12",
+                    "2018": "14"
+                  }
+                },
+                {
+                  "name": "High Roof",
+                  "price": {
+                    "2017": "23",
+                    "2018": "24"
+                  }
+                }
+              ],
+              "powertrain": [
+                {
+                  "name": "6 Cylinders",
+                  "price": {
+                    "2017": "22",
+                    "2018": "44"
+                  }
+                }
+              ],
+              "payload": [
+                {
+                  "name": [
+                    {
+                      "payload": "3501 lbs."
+                    },
+                    {
+                      "towing": "5000 lbs."
+                    }
+                  ],
+                  "price": {
+                    "2017": "11",
+                    "2018": "10"
+                  }
+                }
+              ]
             },
             "PV": {
+              "pic": "https://assets.mbvans.com/c_scale,w_310/Mercedes-Benz-Vans/Sprinter/Passenger-Van/BYO-Model/sprinter_passenger.png",
               "title": "sprinter",
               "name": "Passenger van",
               "price": {
@@ -38,9 +155,67 @@
                   "2017": "35000",
                   "2018": "38000"
                 }
-              }
+              },
+              "wheelbase": [
+                {
+                  "name": "144",
+                  "price": {
+                    "2017": "12",
+                    "2018": "13"
+                  }
+                },
+                {
+                  "name": "170",
+                  "price": {
+                    "2017": "23",
+                    "2018": "22"
+                  }
+                }
+              ],
+              "height": [
+                {
+                  "name": "Standard Roof",
+                  "price": {
+                    "2017": "12",
+                    "2018": "14"
+                  }
+                },
+                {
+                  "name": "High Roof",
+                  "price": {
+                    "2017": "23",
+                    "2018": "24"
+                  }
+                }
+              ],
+              "powertrain": [
+                {
+                  "name": "6 Cylinders",
+                  "price": {
+                    "2017": "22",
+                    "2018": "44"
+                  }
+                }
+              ],
+              "payload": [
+                {
+                  "name": [
+                    {
+                      "payload": "3501 lbs."
+                    },
+                    {
+                      "towing": "5000 lbs."
+                    }
+                  ],
+                  "price": {
+                    "2017": "11",
+                    "2018": "10"
+                  }
+                }
+              ]
             },
             "CC": {
+              "pic": "https://assets.mbvans.com/c_scale,w_310/Mercedes-Benz-Vans/Sprinter/Cab-Chassis/BYO-Model/sprinter_cab_chassis.png",
               "title": "sprinter",
               "name": "Cab chassis",
               "price": {
@@ -48,7 +223,64 @@
                   "2017": "36000",
                   "2018": "38500"
                 }
-              }
+              },
+              "wheelbase": [
+                {
+                  "name": "144",
+                  "price": {
+                    "2017": "12",
+                    "2018": "13"
+                  }
+                },
+                {
+                  "name": "170",
+                  "price": {
+                    "2017": "23",
+                    "2018": "22"
+                  }
+                }
+              ],
+              "height": [
+                {
+                  "name": "Standard Roof",
+                  "price": {
+                    "2017": "12",
+                    "2018": "14"
+                  }
+                },
+                {
+                  "name": "High Roof",
+                  "price": {
+                    "2017": "23",
+                    "2018": "24"
+                  }
+                }
+              ],
+              "powertrain": [
+                {
+                  "name": "6 Cylinders",
+                  "price": {
+                    "2017": "22",
+                    "2018": "44"
+                  }
+                }
+              ],
+              "payload": [
+                {
+                  "name": [
+                    {
+                      "payload": "3501 lbs."
+                    },
+                    {
+                      "towing": "5000 lbs."
+                    }
+                  ],
+                  "price": {
+                    "2017": "11",
+                    "2018": "10"
+                  }
+                }
+              ]
             }
           }
         },

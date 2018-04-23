@@ -1,6 +1,5 @@
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 const port = process.env.PORT || 3000;
 const ASSET_PATH = process.env.ASSET_PATH || '/';
@@ -25,15 +24,25 @@ module.exports = {
       },
       {
         test: /\.sass$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            { loader: 'css-loader'},
-            {
-              loader:  'sass-loader'
-            }
-          ]
-        })
+        use: [
+          {
+            loader: "style-loader" // creates style nodes from JS strings
+          },
+          {
+            loader: "css-loader" // translates CSS into CommonJS
+          },
+          {
+            loader: "sass-loader" // compiles Sass to CSS
+          }
+        ]
+      },
+      {
+        test: /\.(eot|woff2|woff|ttf|svg)$/,
+        use:[
+          {
+            loader: "file-loader"
+          }
+        ]
       }
     ]
   },
@@ -41,9 +50,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: 'public/index.html',
       favicon: 'public/favicon.ico',
-    }),
-    new ExtractTextPlugin({
-      filename: '[name].min.css'
     })
   ],
   devServer: {

@@ -1,57 +1,22 @@
+@import variables
+
 body
   margin: 0
   padding: 0
 
-a
+a,
+a:hover,
+a:visited,
+a:link
   text-decoration: none
   color: #000
 
-.header
-  background-color: #141414
-  color: #fff
-  ul
-    list-style-type: none
-    margin: 0
-    .nav-item
-      width: 20%
-      cursor: pointer
-      height: 80px
-      float: left
-      border-right: 1px solid grey
-      .nav-link-content
-        position: absolute
-        background-color: white
-        display: none
-        z-index: 10
-        width: 100%
-        left: 0
-        a
-          width: 20%
-          float: left
-          text-align: center
-          figure
-            width: 130px
-            overflow: hidden
-            margin: 0 auto
-            img
-              width: 250px
-    .nav-item:hover
-      .nav-link-content
-        display: block
-    .logo
-      width: 28%
-      .img
-        width: 100%
+@import navbar
 
-.link-wrap
-  display: table
-  position: relative
-  height: 100%
-  margin: 0 auto
-  padding: 0 20px
-  .link
-    display: table-cell
-    vertical-align: middle
+.main
+  background-color: white
+  width: 100%
+  display: inline-block
 
 .build-progress-bar
   width: 100%
@@ -78,30 +43,118 @@ a
     .build-progress
       margin-top: 10px
       height: 10px
-      background-color: lightgrey
+      background-color: $grey
     .build-name
       margin-top: 10px
       color: #0b63ef
       text-align: center
 
-.model-name, .model-year
+.model-name,
+.model-year
   .container
     .model-section
-      text-align: center
+      display: flex
+      margin: 25px 0 0
       .selected
-        color: blue
+        a
+          color: $primary-color !important
       .model
-        font-size: 26px
-        display: inline-block
         padding: 0 15px
+        a
+          color: $grey
+          float: right
+      .model:nth-child(2n + 1)
+        border-right: 1px solid $grey
+      .model:nth-child(2n)
+        a
+          float: left
 
-.vehicles
-  .vehicle
+.model-name
+  .container
+    .heading
+      h2
+        margin: 20px 0 30px
+        text-align: center
+        font-family: $font-family-quicksand
+        font-weight: lighter
+        font-size: 36px
+    .model-section
+      .model
+        font-size: 40px
+        font-style: italic
+        text-transform: uppercase
+        font-family: $font-family-titillium
+        font-weight: 700
+
+.model-year
+  .container
+    .model-section
+      .model
+        font-size: 30px
+        font-family: $font-family-quicksand
+        font-weight: bold
+
+@media(max-width: 768px)
+  .model-name
+    .container
+      .heading
+        h2
+          font-size: 24px
+      .model-section
+        .model
+          font-size: 30px
+  .model-year
+    .container
+      .model-section
+        .model
+          font-size: 24px
+
+.body-types
+  margin-top: 40px
+  .inline
     display: inline-block
-    padding: 0 20px
-    text-align: center
+    vertical-align: top
+    .body-type
+      cursor: pointer
+      width: 210px
+      padding: 0 15px
+      .title,
+      .name,
+      .price
+        padding: 0 20px
+        text-align: center
+      .image
+        width: 100%
+        img
+          width: 100%
+      .title
+        font-family: $font-family-titillium
+        font-size: 20px
+        font-style: italic
+        text-transform: uppercase
+        font-weight: bold
+      .name
+        font-family: $font-family-quicksand
+        font-size: 20px
+        text-transform: capitalize
+      .price
+        span
+          color: $grey
+          font-weight: lighter
+    .body-type-blur
+      transform: scale(1)
+    .selected
+      transform: scale(1.3)
 
-
+@media(min-width: 768px) and (max-width: 1280px)
+  .body-types
+    .inline
+      .body-type
+        width: calc(24vw - 36px)
+      .body-type-blur
+        width: calc(24vw - 85px)
+      .selected
+        width: calc(24vw)
 
 .block::before, .block::after
   content: ""
